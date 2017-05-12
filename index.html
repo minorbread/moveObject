@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 200px;
+			height: 200px;
+			text-align: center;
+			background-color: #ff0;
+			margin: 0 auto;
+			position: relative;
+			overflow: hidden;
+			float: left;
+		}
+		#group {
+			width: 1000px;
+			height: 1000px;
+			text-align: center;
+			margin: 0 auto;
+			opacity: 0.5;
+			background-color: #0ff;
+		}
+
+	</style>
+	<script type="text/javascript" src="js/Movebox.js"></script>
+	<script type="text/javascript" src="js/GroupAddEvent.js"></script>
+</head>
+<body>
+	<div id="group">
+		<div class="box">HelloWorld</div>
+		<div class="box">HelloWorld</div>
+		<div class="box">HelloWorld</div>
+		<div class="box">HelloWorld</div>
+		<div class="box">HelloWorld</div>
+		<div class="box">HelloWorld</div>
+		<div class="box">HelloWorld</div>
+		<div class="box">HelloWorld</div>
+		<div class="box">HelloWorld</div>
+		<div class="box">HelloWorld</div>
+	</div>
+	<script>
+			var group = document.getElementById('group');
+			var test1 = new GroupAddEvent(group, Movebox);
+			test1.run();
+	</script>
+</body>
+</html>
